@@ -289,11 +289,11 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Administration\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\actualOutput\" />
     <Folder Include="App_Data\uploads\" />
-    <Folder Include="Views\Administration\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

@@ -16,10 +16,10 @@ namespace Ankk.Web.Controllers
 
         public ActionResult Index()
         {
-            //if (User.IsInRole("Administrator"))
-            //{
-            //    RedirectToAction("Index", "Administration");   
-            //}
+            if (User.IsInRole("Administrator"))
+            {
+                return RedirectToAction("Index", "Administration");
+            }
 
             return View();
         }
