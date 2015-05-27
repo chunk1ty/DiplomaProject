@@ -1,5 +1,4 @@
-﻿using Ankk.Web.App_Start;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -13,13 +12,10 @@ namespace Ankk.Web
     {
         protected void Application_Start()
         {
-            ViewEnginesConfig.RegisterViewEngines(ViewEngines.Engines);
-
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
-           
         }
     }
 }

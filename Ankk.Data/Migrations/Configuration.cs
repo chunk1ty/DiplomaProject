@@ -6,8 +6,8 @@ namespace Ankk.Data.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
     using Ankk.Data;
-    using Microsoft.AspNet.Identity;
     using Microsoft.AspNet.Identity.EntityFramework;
+    using Microsoft.AspNet.Identity;
 
     public sealed class Configuration : DbMigrationsConfiguration<AnkkDbContext>
     {
@@ -36,30 +36,7 @@ namespace Ankk.Data.Migrations
 
         private void CreateAdmin(AnkkDbContext context)
         {
-            //var roleManager = new RoleManager<IdentityRole>(new RoleStore<IdentityRole>(new AnkkDbContext()));
-            //var roleCreate = roleManager.Create(new IdentityRole("Administrator"));
-            //if (!roleCreate.Succeeded)
-            //{
-            //    throw new ArgumentNullException("The role wasn't create " + roleCreate.Errors);
-            //}
 
-            //// 2 step -> create admin 
-            //var userManager = HttpContext.GetOwinContext().GetUserManager<ApplicationUserManager>();
-            //var user = new User()
-            //{
-            //    UserName = "admin@admin.com",
-            //    Email = "admin@admin.com"
-            //};
-            //var createUserResult = userManager.Create(user, "123456");
-            //if (!createUserResult.Succeeded)
-            //{
-            //    throw new ArgumentNullException("The role wasn't create " + createUserResult.Errors);
-            //}
-
-            //// 3 step -> 
-            //userManager.AddToRole(user.Id, "Administrator");
-
-           
             var userStore = new UserStore<User>(context);
             var userManager = new UserManager<User>(userStore);
 
@@ -93,4 +70,4 @@ namespace Ankk.Data.Migrations
             }
         }
     }
-};
+}

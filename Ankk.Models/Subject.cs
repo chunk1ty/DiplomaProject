@@ -5,7 +5,7 @@
     public class Subject
     {
         public Subject()
-        {            
+        {
             this.Scores = new HashSet<Score>();
             this.Users = new HashSet<User>();
         }

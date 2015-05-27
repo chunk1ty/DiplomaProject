@@ -19,7 +19,7 @@
             return new AnkkDbContext();
         }
 
-        
+
         public IDbSet<Subject> Subjects { get; set; }
 
         public IDbSet<Score> Scores { get; set; }

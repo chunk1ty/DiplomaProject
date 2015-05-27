@@ -20,7 +20,7 @@
         }
 
         public AnkkData()
-            : this (new AnkkDbContext())
+            : this(new AnkkDbContext())
         {
 
         }

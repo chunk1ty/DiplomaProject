@@ -60,7 +60,7 @@ namespace Ankk.Web.Controllers
 
             int counter = 0;
             for (int i = 1; i <= numberOfTests; i++)
-            {               
+            {
                 string output = Path.Combine(Server.MapPath("~/App_Data/output"), "test.00" + i + ".out.txt");
                 FileInfo outputFile = new FileInfo(output);
 
@@ -123,7 +123,7 @@ namespace Ankk.Web.Controllers
 
                 using (StreamWriter writer = new StreamWriter(pathOutput))
                 {
-                    writer.Write(output);                    
+                    writer.Write(output);
                 }
 
                 cmd.Close();

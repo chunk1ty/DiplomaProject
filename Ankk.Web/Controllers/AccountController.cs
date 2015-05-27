@@ -1,15 +1,18 @@
-﻿namespace Ankk.Web.Controllers
-{
-    using Ankk.Models;
-    using Ankk.Web.Models;
-    using Microsoft.AspNet.Identity;
-    using Microsoft.AspNet.Identity.Owin;
-    using Microsoft.Owin.Security;
-    using System.Linq;
-    using System.Threading.Tasks;
-    using System.Web;
-    using System.Web.Mvc;
+﻿using System;
+using System.Globalization;
+using System.Linq;
+using System.Security.Claims;
+using System.Threading.Tasks;
+using System.Web;
+using System.Web.Mvc;
+using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.Owin;
+using Microsoft.Owin.Security;
+using Ankk.Web.Models;
+using Ankk.Models;
 
+namespace Ankk.Web.Controllers
+{
     [Authorize]
     public class AccountController : Controller
     {

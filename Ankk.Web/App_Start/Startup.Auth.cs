@@ -6,8 +6,8 @@ using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Google;
 using Owin;
 using Ankk.Web.Models;
-using Ankk.Data;
 using Ankk.Models;
+using Ankk.Data;
 
 namespace Ankk.Web
 {
