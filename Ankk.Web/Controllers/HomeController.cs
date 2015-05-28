@@ -6,13 +6,15 @@ using System.Web;
 using System.Web.Mvc;
 using System.Diagnostics;
 using System.Security.Cryptography;
+using Ankk.Data;
 
 namespace Ankk.Web.Controllers
 {
     [Authorize]
     public class HomeController : Controller
     {
-        const int numberOfTests = 9;
+        private const int numberOfTests = 9;
+        private IAnkkData data = new AnkkData();
 
         public ActionResult Index()
         {
@@ -26,25 +28,23 @@ namespace Ankk.Web.Controllers
 
         [HttpPost]
         public ActionResult Index(HttpPostedFileBase file)
-        {
-            // Verify that the user selected a file
+        {           
             if (file != null && file.ContentLength > 0)
-            {
-                // extract only the fielname
+            {               
                 var fileName = Path.GetFileName(file.FileName);
-                // store the file inside ~/App_Data/uploads folder
                 var path = Path.Combine(Server.MapPath("~/App_Data/uploads"), fileName);
                 file.SaveAs(path);
             }
-            // redirect back to the index action to show the form once again
+            
             return RedirectToAction("Result");
         }
 
         public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
+        {     
+            //TODO i receive contest model but i should return ContestViewModel
+            var contest = this.data.Contests.All();
 
-            return View();
+            return View(contest);
         }
 
         public ActionResult Result()

@@ -1,15 +1,15 @@
 ﻿namespace Ankk.Models
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
+    using System.ComponentModel.DataAnnotations;
 
     public class Contest
     {
         public int Id { get; set; }
 
-        public byte[] Exe { get; set; }
+        [MaxLength(100)]
+        public string Name { get; set; }
+
+        [Required]
+        public bool IsVisible { get; set; }
     }
 }

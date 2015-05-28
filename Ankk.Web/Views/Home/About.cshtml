@@ -1,7 +1,13 @@
-﻿@{
-    ViewBag.Title = "About";
-}
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+﻿@using System.Collections.Generic;
+@using Ankk.Web.Models;
+@using Ankk.Models;
+@model IEnumerable<Contest>
 
-<p>Use this area to provide additional information.</p>
+@foreach (Contest item in Model)
+{
+    if (item.IsVisible)
+    {
+        @item.Name
+        <br />
+    }
+}
