@@ -1,13 +1,10 @@
 ﻿namespace Ankk.Data.Repositories
 {
     using System;
-using System.Collections.Generic;
-using System.Data.Entity;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+    using System.Data.Entity;
+    using System.Data.Entity.Infrastructure;
+    using System.Linq;
     using System.Linq.Expressions;
-using System.Data.Entity.Infrastructure;
 
     public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
@@ -63,6 +60,18 @@ using System.Data.Entity.Infrastructure;
             }
 
             return entry;
+        }
+
+        public T Find(object id)
+        {
+            return this.set.Find(id);
+        }
+
+        public T Delete(object id)
+        {
+            var entity = this.Find(id);
+            this.Delete(entity);
+            return entity;
         }
     }
 }

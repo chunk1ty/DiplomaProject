@@ -36,7 +36,6 @@ namespace Ankk.Data.Migrations
 
         private void CreateAdmin(AnkkDbContext context)
         {
-
             var userStore = new UserStore<User>(context);
             var userManager = new UserManager<User>(userStore);
 

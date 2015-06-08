@@ -14,6 +14,10 @@
 
         void Delete(T entity);
 
+        T Find(object id);
+
+        T Delete(object id);
+
         void Update(T entity);
 
         void Detach(T entity);

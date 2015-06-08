@@ -57,8 +57,6 @@ C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web\bin\Microsoft.Owin.Sec
 C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web\obj\Debug\Ankk.Web.csprojResolveAssemblyReference.cache
 C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web\obj\Debug\Ankk.Web.dll
 C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web\obj\Debug\Ankk.Web.pdb
-C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web\bin\Compiler.dll
-C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web\bin\Compiler.pdb
 D:\DimplomaProject\DiplomaProject\Ankk.Web\bin\Ankk.Web.dll.config
 D:\DimplomaProject\DiplomaProject\Ankk.Web\bin\Ankk.Web.dll
 D:\DimplomaProject\DiplomaProject\Ankk.Web\bin\Ankk.Web.pdb
@@ -249,3 +247,22 @@ C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Web\bin\System.Web.Optimization.xm
 C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Web\obj\Debug\Ankk.Web.csprojResolveAssemblyReference.cache
 C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Web\obj\Debug\Ankk.Web.dll
 C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Web\obj\Debug\Ankk.Web.pdb
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Web\bin\GridMvc.dll
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Web\bin\AutoMapper.Net4.dll
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Web\bin\AutoMapper.dll
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Web\bin\AutoMapper.pdb
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Web\bin\AutoMapper.xml
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Web\bin\AutoMapper.Net4.pdb
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web\bin\AutoMapper.Net4.dll
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web\bin\AutoMapper.dll
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web\bin\GridMvc.dll
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web\bin\Ninject.dll
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web\bin\Ninject.Web.Common.dll
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web\bin\Ninject.Web.Mvc.dll
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web\bin\WebActivatorEx.dll
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web\bin\AutoMapper.pdb
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web\bin\AutoMapper.xml
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web\bin\AutoMapper.Net4.pdb
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web\bin\Ninject.xml
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web\bin\Ninject.Web.Common.xml
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web\bin\Ninject.Web.Mvc.xml

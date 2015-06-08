@@ -6,11 +6,15 @@
 
     public interface IAnkkDbContext
     {
-        IDbSet<Subject> Subjects { get; set; }
+       
 
         IDbSet<Score> Scores { get; set; }
 
         IDbSet<Contest> Contests { get; set; }
+
+        IDbSet<Question> Questions { get; set; }
+
+        IDbSet<Answer> Answers { get; set; }        
 
         IDbSet<T> Set<T>() where T : class;
 

@@ -42,3 +42,7 @@ C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Data\bin\Debug\Microsoft.AspNet.Id
 C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Data\obj\Debug\Ankk.Data.csprojResolveAssemblyReference.cache
 C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Data\obj\Debug\Ankk.Data.dll
 C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Data\obj\Debug\Ankk.Data.pdb
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml

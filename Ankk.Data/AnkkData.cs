@@ -25,11 +25,6 @@
 
         }
 
-        public IGenericRepository<Subject> Subjects
-        {
-            get { return this.GetRepository<Subject>(); }
-        }
-
         public IGenericRepository<Score> Scores
         {
             get { return this.GetRepository<Score>(); }
@@ -38,6 +33,21 @@
         public IGenericRepository<Contest> Contests
         {
             get { return this.GetRepository<Contest>(); }
+        }
+
+        public IGenericRepository<Question> Questions
+        {
+            get { return this.GetRepository<Question>(); }
+        }
+
+        public IGenericRepository<Answer> Answers
+        {
+            get { return this.GetRepository<Answer>(); }
+        }
+
+        public IGenericRepository<User> AppUsers
+        {
+            get { return this.GetRepository<User>(); }
         }
 
         public void SaveChanges()

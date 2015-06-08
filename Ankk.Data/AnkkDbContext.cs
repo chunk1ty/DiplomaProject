@@ -20,11 +20,14 @@
         }
 
 
-        public IDbSet<Subject> Subjects { get; set; }
-
+       
         public IDbSet<Score> Scores { get; set; }
 
         public IDbSet<Contest> Contests { get; set; }
+
+        public IDbSet<Question> Questions { get; set; }
+
+        public IDbSet<Answer> Answers { get; set; }
 
         public new IDbSet<T> Set<T>() where T : class
         {
@@ -32,7 +35,7 @@
         }
 
         public new void SaveChanges()
-        {
+        {            
             base.SaveChanges();
         }
     }

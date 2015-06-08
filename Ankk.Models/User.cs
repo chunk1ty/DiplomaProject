@@ -9,9 +9,12 @@
     public class User : IdentityUser
     {
         public User()
-        {
-            this.Subjects = new HashSet<Subject>();
+        {            
+            this.Contests = new HashSet<Contest>();
+            this.Answers = new HashSet<Answer>();
         }
+
+        public int Fn { get; set; }
 
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<User> manager)
         {
@@ -21,6 +24,12 @@
             return userIdentity;
         }
 
-        public virtual ICollection<Subject> Subjects { get; set; }
+        public virtual ICollection<Contest> Contests { get; set; }
+
+        //public int ContestId { get; set; }
+
+        //public virtual Contest Contest { get; set; }
+
+        public virtual ICollection<Answer> Answers { get; set; }
     }
 }

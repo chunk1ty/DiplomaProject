@@ -21,7 +21,21 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    @*<li>@Html.ActionLink("Home", "Index", "Home")</li>*@
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <li>@Html.ActionLink("Contest", "Index", "Student", new { area = string.Empty }, null)</li>
+                        
+                        if (User.IsInRole("Administrator"))
+                        {
+                            @*<li>
+                                Administration
+                                <ul>*@
+                                    <li>@Html.ActionLink("Admin", "Index", "Administration", new { area = string.Empty }, null)</li>
+                                @*</ul>
+                            </li>*@
+                        }
+                    }
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
@@ -30,7 +44,7 @@
     <div class="container body-content">
         @RenderBody()
         <hr />
-        <footer>
+        <footer class="text-center">
             <p>&copy; @DateTime.Now.Year - Andriyan Krastev</p>
         </footer>
     </div>

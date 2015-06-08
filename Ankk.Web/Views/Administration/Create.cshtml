@@ -5,10 +5,14 @@
 }
 
 <h2>@ViewBag.Title</h2>
+
+<hr />
+
 <div id="create-form" class="container">
     @using (Html.BeginForm("Create", "Administration", FormMethod.Post))
     {
         @Html.AntiForgeryToken()
+        @Html.ValidationSummary("", new { @class = "text-danger" })
 
         <div class="row">
             <div class="editor-label col-xs-3">
@@ -21,7 +25,6 @@
             </div>
             <div class="editor-field col-xs-4">
                 <span class="glyphicon glyphicon-question-sign text-primary" title="Enter title of exam" data-tooltip="true"></span>
-                @Html.ValidationMessageFor(m => m.Name)
             </div>
         </div>
         <br />
@@ -36,17 +39,22 @@
                 @Html.EditorFor(m => m.IsVisible, new { @class = "form-control pull-left full-editor" })
             </div>
             <div class="editor-field col-xs-4">
-                <span class="glyphicon glyphicon-question-sign text-primary" title="Choose whether the exam is visible" data-tooltip="true"></span>
-                @Html.ValidationMessageFor(m => m.IsVisible)
+                <span class="glyphicon glyphicon-question-sign text-primary" title="Choose whether the exam is visible for the students" data-tooltip="true"></span>
             </div>
         </div>
+        <br />
 
-        <hr />
-        <div class="row">
-            <div class="editor-label col-xs-3">
-                <button type="submit" class="btn btn-primary pull-right">Създай</button>
-            </div>
+    <div class="row">
+        <div class="editor-label col-xs-3">
+            <div class="pull-right"></div>
         </div>
-
+        <div class="editor-field col-xs-4">
+            <button type="submit" class="btn btn-primary">Create</button>
+        </div>       
+    </div>
     }
 </div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

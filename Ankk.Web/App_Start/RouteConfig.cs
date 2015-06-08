@@ -18,6 +18,12 @@ namespace Ankk.Web
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
+
+            routes.MapRoute(
+                name: "View User Results",
+                url: "{controller}/{action}/{UserId}",
+                defaults: new { controller = "Result", action = "UserResult", UserId = UrlParameter.Optional}
+            );
         }
     }
 }

@@ -6,8 +6,8 @@
 
         public int Points { get; set; }
 
-        public int SubjectId { get; set; }
+        //public int TaskAnswerId { get; set; }
 
-        public virtual  Subject Subject { get; set; }
+        //public virtual TaskAnswer TaskAnswer { get; set; }
     }
 }
