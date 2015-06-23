@@ -236,6 +236,7 @@
 
                 using (StreamWriter writer = new StreamWriter(pathOutput))
                 {
+                    output = output.Trim();
                     writer.Write(output);
                 }
 
