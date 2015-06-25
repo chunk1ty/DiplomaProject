@@ -19,6 +19,9 @@
         [Required]
         public bool IsVisible { get; set; }
 
+        [Required]
+        public bool IsStrict { get; set; }
+
         public virtual ICollection<User> Users { get; set; }
 
         public virtual ICollection<Question> Questions { get; set; }

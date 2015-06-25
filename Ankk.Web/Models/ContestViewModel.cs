@@ -19,5 +19,9 @@
         [Required]
         [Display(Name = "Visible ?")]
         public bool IsVisible { get; set; }
+
+        [Required]
+        [Display(Name = "Is strict check?")]
+        public bool IsStrict { get; set; }
     }
 }

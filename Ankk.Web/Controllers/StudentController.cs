@@ -117,6 +117,14 @@
             var contestId = question.ContestId;
             var questionName = question.Name;
 
+            var contest = this.Data.
+                                Contests
+                                .All()
+                                .Where(c => c.Id == contestId)
+                                .FirstOrDefault();
+
+            bool isCheckStrict = contest.IsStrict;
+
             var userEmail = User.Identity.Name;
 
             if (file != null && file.ContentLength > 0)
@@ -126,7 +134,7 @@
                 var path = Path.Combine(Server.MapPath("~/App_Data/" + userEmail + "/" + model.Id + "/uploads"), fileName);
                 file.SaveAs(path);
 
-                OpenCMD(model.Id, userEmail, contestId, questionName);
+                OpenCMD(model.Id, userEmail, contestId, questionName, isCheckStrict);
                 int result = Compare(model.Id, userEmail, contestId, questionName) * 10;
 
                 var userId = User.Identity.GetUserId();
@@ -183,7 +191,7 @@
             return counter;
         }
 
-        private void OpenCMD(int id, string userEmail, int contestId, string questionName)
+        private void OpenCMD(int id, string userEmail, int contestId, string questionName, bool isStrict)
         {
             var pathToUserUploadExe = Server.MapPath("~/App_Data/" + userEmail + "/" + id + "/uploads");
             var getFiles = Directory.GetFiles(pathToUserUploadExe);
@@ -236,7 +244,12 @@
 
                 using (StreamWriter writer = new StreamWriter(pathOutput))
                 {
-                    output = output.Trim();
+                    if (!isStrict)
+                    {
+                        output = output.Trim();
+                        output += Environment.NewLine;
+                    }
+
                     writer.Write(output);
                 }
 
